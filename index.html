@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chess-311</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 0;
+        color: #444;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        font-size: 36px;
+        margin-top: 50px;
+        color: #444;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 20px;
+        color: #444;
+      }
+      .image {
+        text-align: center;
+        margin-top: 50px;
+      }
+      ul {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 20px;
+        color: #444;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 50px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(to right, #00c9ff, #92fe9d);
+        border-radius: 50px;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.2);
+      }
+  
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css" />
+        <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chess-311</h1>
+      <div id="board" class="board"></div>
+    </br>
+    </br>
+      <div class="info">
+        Search depth:
+        <select id="search-depth">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+  
+        <br /><br />
+        <span>Positions evaluated: <span id="position-count"></span></span>
+        <br /><br />
+        <span>Time: <span id="time"></span></span>
+        <br /><br />
+        <span>Positions/s: <span id="positions-per-s"></span> </span>
+        <br /><br />
+        <span>PGN file: </span>
+        <br /><br />
+        <div id="move-history" class="move-history"></div>
+      </div>
+      <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+      <script src="lib/chessboardjs/js/chess.js"></script>
+      <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+      <script src="script.js"></script>
+      <script></script>
+        <div class="center">
+          <button class="button" style="" onclick="location.reload();">Start</button>
+        </div>
+    </div>
+  </body>
+</html>
